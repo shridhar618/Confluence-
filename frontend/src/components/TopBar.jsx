@@ -17,9 +17,9 @@ const PAGE_TITLES = {
   '/work-escalations': { title: 'Escalations', desc: 'Capacity and workload risk review' },
   '/user-access': { title: 'User Access', desc: 'Create accounts and assign roles' },
   '/dashboard': { title: 'Governance Dashboard', desc: 'Audit activity and risk analytics' },
-  '/question-bank': { title: 'Question Bank', desc: 'Governed Q&A dataset operations' },
-  '/ghost-mode': { title: 'Ghost Mode', desc: 'Controlled security intervention simulation' },
-  '/attack-sim': { title: 'Attack Simulator', desc: 'Safe, labeled security event generation' },
+  // '/question-bank': { title: 'Question Bank', desc: 'Governed Q&A dataset operations' },
+  // '/ghost-mode': { title: 'Ghost Mode', desc: 'Controlled security intervention simulation' },
+  // '/attack-sim': { title: 'Attack Simulator', desc: 'Safe, labeled security event generation' },
 }
 
 const SEARCH_TARGETS = [
@@ -32,9 +32,9 @@ const SEARCH_TARGETS = [
   { to: '/work-escalations', label: 'Escalations', keywords: 'risk escalation capacity' },
   { to: '/user-access', label: 'User Access', keywords: 'admin create user accounts' },
   { to: '/dashboard', label: 'Governance Dashboard', keywords: 'audit logs analytics dashboard' },
-  { to: '/question-bank', label: 'Question Bank', keywords: 'dataset questions answers' },
-  { to: '/ghost-mode', label: 'Ghost Mode', keywords: 'security stealth monitoring' },
-  { to: '/attack-sim', label: 'Attack Simulator', keywords: 'security testing simulation' },
+  // { to: '/question-bank', label: 'Question Bank', keywords: 'dataset questions answers' },
+  // { to: '/ghost-mode', label: 'Ghost Mode', keywords: 'security stealth monitoring' },
+  // { to: '/attack-sim', label: 'Attack Simulator', keywords: 'security testing simulation' },
 ]
 
 function useOutsideClose(ref, onClose) {

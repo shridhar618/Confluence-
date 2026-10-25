@@ -225,9 +225,10 @@ export default function ChatPage() {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages, loading, suggestedQuestions])
 
-  useEffect(() => {
-    loadQuestionData()
-  }, [])
+  // Question Bank is temporarily disabled.
+  // useEffect(() => {
+  //   loadQuestionData()
+  // }, [])
 
   const filteredQuestions = questions.filter(item => {
     const needle = questionSearch.trim().toLowerCase()
@@ -525,9 +526,11 @@ export default function ChatPage() {
             </div>
           </div>
 
+          {/* Question Bank is temporarily disabled.
           <aside className="xl:w-[360px] xl:min-w-[320px] xl:max-w-[400px] min-h-0">
             {questionBankPanel}
           </aside>
+          */}
         </div>
       </div>
     </motion.div>
