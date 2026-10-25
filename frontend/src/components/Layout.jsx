@@ -42,9 +42,10 @@ export default function Layout() {
         ...(hasPermission('use_ai_assistant')
           ? [{ to: '/chat', icon: Cpu, label: 'Governance Assistant', desc: 'Policy-grounded AI chat' }]
           : []),
-        ...(hasPermission('manage_policies')
-          ? [{ to: '/policy-sources', icon: Database, label: 'Policy Sources', desc: 'Governance corpus' }]
-          : []),
+        // Policy Sources is temporarily disabled.
+        // ...(hasPermission('manage_policies')
+        //   ? [{ to: '/policy-sources', icon: Database, label: 'Policy Sources', desc: 'Governance corpus' }]
+        //   : []),
       ],
     },
     {
@@ -73,8 +74,8 @@ export default function Layout() {
         ? [
             { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard', desc: 'Audit & analytics' },
             { to: '/governance-cases', icon: ShieldAlert, label: 'Governance Cases', desc: 'Review & escalations' },
-            { to: '/ghost-mode', icon: Shield, label: 'Ghost Mode', desc: 'Stealth monitoring' },
-            { to: '/attack-sim', icon: Shield, label: 'Attack Simulator', desc: 'Security testing' },
+            // { to: '/ghost-mode', icon: Shield, label: 'Ghost Mode', desc: 'Stealth monitoring' },
+            // { to: '/attack-sim', icon: Shield, label: 'Attack Simulator', desc: 'Security testing' },
           ]
         : [],
     },
@@ -83,7 +84,7 @@ export default function Layout() {
       items: isAdmin
         ? [
             { to: '/user-access', icon: UserPlus, label: 'User Access', desc: 'Create accounts' },
-            { to: '/question-bank', icon: Database, label: 'Question Bank', desc: 'Dataset ops' },
+            // { to: '/question-bank', icon: Database, label: 'Question Bank', desc: 'Dataset ops' },
           ]
         : [],
     },

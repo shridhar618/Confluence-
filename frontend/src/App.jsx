@@ -7,12 +7,8 @@ import ChatPage from './pages/ChatPage'
 import PrivateChatPage from './pages/PrivateChatPage'
 import DashboardPage from './pages/DashboardPage'
 import GovernanceCasesPage from './pages/GovernanceCasesPage'
-import PolicySourcesPage from './pages/PolicySourcesPage'
-import QuestionBankPage from './pages/QuestionBankPage'
 import FaceAttendancePage from './pages/FaceAttendancePage'
 import FaceUnlockPage from './pages/FaceUnlockPage'
-import GhostModePage from './pages/GhostModePage'
-import AttackSimPage from './pages/AttackSimPage'
 import WorkAssignmentsPage from './pages/WorkAssignmentsPage'
 import MyWorkPage from './pages/MyWorkPage'
 import WorkBoardPage from './pages/WorkBoardPage'
@@ -86,23 +82,23 @@ function AppRoutes() {
           </ProtectedRoute>
         } />
 
-        <Route path="ghost-mode" element={
+        {/* <Route path="ghost-mode" element={
           <ProtectedRoute adminOnly>
             <GhostModePage />
           </ProtectedRoute>
-        } />
+        } /> */}
 
-        <Route path="attack-sim" element={
+        {/* <Route path="attack-sim" element={
           <ProtectedRoute adminOnly>
             <AttackSimPage />
           </ProtectedRoute>
-        } />
+        } /> */}
 
-        <Route path="question-bank" element={
+        {/* <Route path="question-bank" element={
           <ProtectedRoute adminOnly>
             <QuestionBankPage />
           </ProtectedRoute>
-        } />
+        } /> */}
 
         <Route path="dashboard" element={
           <ProtectedRoute adminOnly>
@@ -116,11 +112,11 @@ function AppRoutes() {
           </ProtectedRoute>
         } />
 
-        <Route path="policy-sources" element={
+        {/* <Route path="policy-sources" element={
           <ProtectedRoute adminOnly>
             <PolicySourcesPage />
           </ProtectedRoute>
-        } />
+        } /> */}
       </Route>
 
       <Route path="*" element={<Navigate to="/welcome" replace />} />

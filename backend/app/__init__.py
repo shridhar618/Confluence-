@@ -69,12 +69,14 @@ def create_app():
     from app.routes.projects import projects_bp
     from app.routes.ai_tasks import ai_tasks_bp
     from app.routes.notifications import notifications_bp
-    from app.routes.policies import policies_bp
+    # Policy Sources is temporarily disabled.
+    # from app.routes.policies import policies_bp
     from app.routes.compliance import compliance_bp
     from app.routes.risk_config import risk_config_bp
     from app.routes.governance_cases import governance_cases_bp
-    from app.ghost_routes import ghost_bp
-    from app.attack_routes import attack_bp
+    # Ghost Mode and Attack Simulator are temporarily disabled.
+    # from app.ghost_routes import ghost_bp
+    # from app.attack_routes import attack_bp
 
     app.register_blueprint(auth_bp, url_prefix="/api/auth")
     app.register_blueprint(admin_bp, url_prefix="/api")
@@ -88,12 +90,12 @@ def create_app():
     app.register_blueprint(projects_bp, url_prefix="/api")
     app.register_blueprint(ai_tasks_bp, url_prefix="/api")
     app.register_blueprint(notifications_bp, url_prefix="/api")
-    app.register_blueprint(policies_bp, url_prefix="/api")
+    # app.register_blueprint(policies_bp, url_prefix="/api")
     app.register_blueprint(compliance_bp, url_prefix="/api")
     app.register_blueprint(risk_config_bp, url_prefix="/api")
     app.register_blueprint(governance_cases_bp, url_prefix="/api")
-    app.register_blueprint(ghost_bp, url_prefix="/api")
-    app.register_blueprint(attack_bp, url_prefix="/api")
+    # app.register_blueprint(ghost_bp, url_prefix="/api")
+    # app.register_blueprint(attack_bp, url_prefix="/api")
 
     # Socket events
     from app.routes import socket_events  # noqa
