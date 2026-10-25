@@ -1,0 +1,789 @@
+[
+  {
+    "id": "hello",
+    "category": "General",
+    "question": "Hello",
+    "aliases": [
+      "hi",
+      "hey",
+      "good morning",
+      "good afternoon"
+    ],
+    "keywords": [
+      "hello",
+      "hi",
+      "hey",
+      "greeting"
+    ],
+    "answer": "Hello! I'm SecureAI, your enterprise assistant. Ask me anything about company policies, teams, HR, IT, security, or operations."
+  },
+  {
+    "id": "help-capabilities",
+    "category": "General",
+    "question": "What can you help me with?",
+    "aliases": [
+      "what do you do",
+      "how can you help",
+      "what can i ask you",
+      "what all can you answer"
+    ],
+    "keywords": [
+      "help",
+      "support",
+      "capabilities",
+      "assist",
+      "answer"
+    ],
+    "answer": "I can help with company policies, HR processes, onboarding, security practices, IT support topics, finance workflows, workplace operations, and general company information stored in the dataset."
+  },
+  {
+    "id": "company-overview",
+    "category": "General",
+    "question": "What does our company do?",
+    "aliases": [
+      "tell me about the company",
+      "what is this company about",
+      "what does secureai do",
+      "company overview"
+    ],
+    "keywords": [
+      "company",
+      "overview",
+      "business",
+      "services",
+      "mission"
+    ],
+    "answer": "The company focuses on secure enterprise AI solutions, internal governance, and workplace automation. It supports teams with policy-aware assistance, operational workflows, and secure handling of sensitive information."
+  },
+  {
+    "id": "company-mission",
+    "category": "General",
+    "question": "What is our company mission?",
+    "aliases": [
+      "what is our mission",
+      "company vision",
+      "what are we trying to achieve",
+      "purpose of the company"
+    ],
+    "keywords": [
+      "mission",
+      "vision",
+      "purpose",
+      "goals"
+    ],
+    "answer": "Our mission is to help teams use AI productively and responsibly through secure systems, clear governance, and practical support for day-to-day work."
+  },
+  {
+    "id": "manager-info",
+    "category": "General",
+    "question": "Who is our manager?",
+    "aliases": [
+      "who is my manager",
+      "who is the boss",
+      "who leads this team",
+      "manager name"
+    ],
+    "keywords": [
+      "manager",
+      "boss",
+      "lead",
+      "supervisor"
+    ],
+    "answer": "The recorded manager name in this dataset is Shridhar Bhat. If you need a meeting, contact the office coordinator and request an appointment instead of walking in without confirmation."
+  },
+  {
+    "id": "org-structure",
+    "category": "General",
+    "question": "How is the company organized?",
+    "aliases": [
+      "organization structure",
+      "org structure",
+      "which departments do we have",
+      "how are teams arranged"
+    ],
+    "keywords": [
+      "organization",
+      "structure",
+      "departments",
+      "teams"
+    ],
+    "answer": "The company is organized into functions such as Engineering, HR, Security, IT, Finance, Operations, and Admin. Teams collaborate through defined managers, shared goals, and cross-functional project work."
+  },
+  {
+    "id": "office-hours",
+    "category": "Operations",
+    "question": "What are the office working hours?",
+    "aliases": [
+      "office timing",
+      "working hours",
+      "what time does office open",
+      "office schedule"
+    ],
+    "keywords": [
+      "office hours",
+      "timing",
+      "working hours",
+      "schedule"
+    ],
+    "answer": "Standard office hours are 9:30 AM to 6:30 PM on business days, unless your team follows an approved shift or flexible schedule."
+  },
+  {
+    "id": "office-location",
+    "category": "Operations",
+    "question": "Where is the office located?",
+    "aliases": [
+      "office address",
+      "where is our office",
+      "company location",
+      "where should i come"
+    ],
+    "keywords": [
+      "office",
+      "location",
+      "address",
+      "campus"
+    ],
+    "answer": "Employees should use the office location listed in the official directory or onboarding documents. If you need a specific floor, seat, or visitor instructions, check with workplace operations."
+  },
+  {
+    "id": "meeting-room-booking",
+    "category": "Operations",
+    "question": "How do I book a meeting room?",
+    "aliases": [
+      "reserve a conference room",
+      "book room",
+      "meeting room reservation",
+      "conference room booking"
+    ],
+    "keywords": [
+      "meeting room",
+      "conference room",
+      "book room",
+      "reserve room"
+    ],
+    "answer": "Meeting rooms can be reserved through the workplace calendar system. Include the purpose, attendees, and any audio or video requirements when you book."
+  },
+  {
+    "id": "visitor-policy",
+    "category": "Operations",
+    "question": "What is the visitor policy?",
+    "aliases": [
+      "can i bring a guest",
+      "guest access policy",
+      "visitor entry rules",
+      "how do visitors enter"
+    ],
+    "keywords": [
+      "visitor",
+      "guest",
+      "entry",
+      "reception"
+    ],
+    "answer": "Visitors should be pre-registered, signed in at reception, and escorted according to workplace security rules. Share visitor details in advance when possible."
+  },
+  {
+    "id": "travel-policy",
+    "category": "Operations",
+    "question": "What is the business travel policy?",
+    "aliases": [
+      "travel rules",
+      "can i travel for work",
+      "official travel policy",
+      "how does business travel work"
+    ],
+    "keywords": [
+      "travel policy",
+      "business travel",
+      "flight booking",
+      "hotel booking"
+    ],
+    "answer": "Business travel should be pre-approved by your manager, booked through approved channels, and aligned with the company travel and reimbursement rules."
+  },
+  {
+    "id": "leave-policy",
+    "category": "HR",
+    "question": "What is our company leave policy?",
+    "aliases": [
+      "how much leave do i get",
+      "pto policy",
+      "vacation policy",
+      "time off policy"
+    ],
+    "keywords": [
+      "leave",
+      "vacation",
+      "time off",
+      "pto"
+    ],
+    "answer": "Employees are entitled to 20 days of annual leave, 10 days of sick leave, and flexible work-from-home options per quarter, subject to manager approval and workload planning."
+  },
+  {
+    "id": "sick-leave-process",
+    "category": "HR",
+    "question": "How do I apply for sick leave?",
+    "aliases": [
+      "sick leave process",
+      "how to request sick leave",
+      "i am sick what should i do",
+      "medical leave request"
+    ],
+    "keywords": [
+      "sick leave",
+      "medical leave",
+      "leave request",
+      "illness"
+    ],
+    "answer": "Inform your manager as early as possible and submit the leave request through the HR system. For longer absences, HR may request supporting medical documentation."
+  },
+  {
+    "id": "holiday-calendar",
+    "category": "HR",
+    "question": "Where can I find the holiday calendar?",
+    "aliases": [
+      "company holidays",
+      "public holidays list",
+      "holiday schedule",
+      "holiday calendar"
+    ],
+    "keywords": [
+      "holiday",
+      "calendar",
+      "public holiday",
+      "festival holiday"
+    ],
+    "answer": "The holiday calendar is published by HR at the start of the year. Use the latest HR notice or employee portal for the final list that applies to your location."
+  },
+  {
+    "id": "remote-work-policy",
+    "category": "HR",
+    "question": "What is the remote work policy?",
+    "aliases": [
+      "work from home policy",
+      "wfh rules",
+      "hybrid work policy",
+      "can i work remotely"
+    ],
+    "keywords": [
+      "remote work",
+      "work from home",
+      "hybrid",
+      "wfh"
+    ],
+    "answer": "Employees may work remotely based on team requirements and manager approval. Most teams follow a hybrid model with designated collaboration days."
+  },
+  {
+    "id": "attendance-policy",
+    "category": "HR",
+    "question": "What is the attendance policy?",
+    "aliases": [
+      "attendance rules",
+      "how is attendance tracked",
+      "late coming policy",
+      "office attendance"
+    ],
+    "keywords": [
+      "attendance",
+      "late",
+      "presence",
+      "check in"
+    ],
+    "answer": "Attendance is tracked through the approved workplace system. Employees are expected to follow team hours, mark attendance accurately, and communicate delays or absences promptly."
+  },
+  {
+    "id": "onboarding-process",
+    "category": "HR",
+    "question": "Explain the onboarding process.",
+    "aliases": [
+      "new hire process",
+      "joining process",
+      "what happens on day one",
+      "employee onboarding"
+    ],
+    "keywords": [
+      "onboarding",
+      "new hire",
+      "orientation",
+      "training"
+    ],
+    "answer": "Onboarding includes IT setup on Day 1, HR orientation on Days 1 and 2, team-specific training during Week 1, and an early check-in with the manager during the first month."
+  },
+  {
+    "id": "probation-policy",
+    "category": "HR",
+    "question": "What is the probation policy?",
+    "aliases": [
+      "probation period",
+      "how long is probation",
+      "new employee probation",
+      "confirmation process"
+    ],
+    "keywords": [
+      "probation",
+      "confirmation",
+      "new joiner",
+      "review period"
+    ],
+    "answer": "New employees usually complete a probation period defined in their offer or HR policy documents. Performance, conduct, and role readiness are reviewed before confirmation."
+  },
+  {
+    "id": "performance-reviews",
+    "category": "HR",
+    "question": "Tell me about performance reviews.",
+    "aliases": [
+      "appraisal cycle",
+      "performance evaluation",
+      "when are reviews done",
+      "review process"
+    ],
+    "keywords": [
+      "performance",
+      "review",
+      "goals",
+      "evaluation"
+    ],
+    "answer": "Performance reviews are conducted twice a year. Goals are aligned early in the cycle, progress is reviewed mid-cycle, and final evaluations are completed at the end of the review period."
+  },
+  {
+    "id": "career-development",
+    "category": "HR",
+    "question": "How does career development work here?",
+    "aliases": [
+      "growth opportunities",
+      "career growth",
+      "promotion path",
+      "learning and development"
+    ],
+    "keywords": [
+      "career development",
+      "growth",
+      "learning",
+      "promotion"
+    ],
+    "answer": "Career development is supported through goal setting, manager coaching, internal mobility, learning resources, and regular growth conversations."
+  },
+  {
+    "id": "benefits-enrollment",
+    "category": "HR",
+    "question": "When can I enroll in employee benefits?",
+    "aliases": [
+      "benefits enrollment",
+      "insurance enrollment",
+      "how do i join benefits",
+      "open enrollment"
+    ],
+    "keywords": [
+      "benefits",
+      "enrollment",
+      "insurance",
+      "open enrollment"
+    ],
+    "answer": "Employees can usually enroll during onboarding, qualifying life events, or the annual open enrollment period announced by HR."
+  },
+  {
+    "id": "notice-period",
+    "category": "HR",
+    "question": "What is the notice period policy?",
+    "aliases": [
+      "resignation notice period",
+      "how much notice should i give",
+      "exit notice period",
+      "serving notice"
+    ],
+    "keywords": [
+      "notice period",
+      "resignation",
+      "exit",
+      "separation"
+    ],
+    "answer": "Notice period requirements depend on your employment terms and role. Employees should review their offer letter or HR policy and coordinate any exit plan with HR and their manager."
+  },
+  {
+    "id": "code-of-conduct",
+    "category": "Compliance",
+    "question": "What does the code of conduct cover?",
+    "aliases": [
+      "workplace conduct policy",
+      "ethics policy",
+      "expected behavior",
+      "company conduct rules"
+    ],
+    "keywords": [
+      "code of conduct",
+      "workplace behavior",
+      "ethics",
+      "harassment"
+    ],
+    "answer": "The code of conduct covers respectful workplace behavior, anti-harassment expectations, ethical decision-making, compliance obligations, and reporting channels."
+  },
+  {
+    "id": "document-retention",
+    "category": "Compliance",
+    "question": "What is the document retention policy?",
+    "aliases": [
+      "record retention policy",
+      "how long do we keep files",
+      "archive policy",
+      "document deletion rules"
+    ],
+    "keywords": [
+      "document retention",
+      "records",
+      "retention policy",
+      "archive"
+    ],
+    "answer": "Document retention depends on the record type and applicable legal or business requirements. Teams should follow the official retention schedule before archiving or deleting files."
+  },
+  {
+    "id": "privacy-handling",
+    "category": "Compliance",
+    "question": "How should personal data be handled?",
+    "aliases": [
+      "pii handling policy",
+      "how do we handle personal information",
+      "privacy rules",
+      "employee data handling"
+    ],
+    "keywords": [
+      "privacy",
+      "pii",
+      "personal data",
+      "data handling"
+    ],
+    "answer": "Personal data should only be accessed for legitimate business purposes, shared on a need-to-know basis, and stored or transmitted using approved secure systems."
+  },
+  {
+    "id": "security-protocols",
+    "category": "Security",
+    "question": "What are our security protocols?",
+    "aliases": [
+      "security policy",
+      "security controls",
+      "how is company security handled",
+      "cybersecurity practices"
+    ],
+    "keywords": [
+      "security",
+      "protocols",
+      "mfa",
+      "zero trust",
+      "encryption"
+    ],
+    "answer": "The security framework includes zero-trust principles, multi-factor authentication, encryption at rest and in transit, least-privilege access, and periodic security reviews."
+  },
+  {
+    "id": "password-reset",
+    "category": "IT",
+    "question": "How do I reset my password?",
+    "aliases": [
+      "forgot my password",
+      "change password",
+      "password help",
+      "cannot log in"
+    ],
+    "keywords": [
+      "reset password",
+      "forgot password",
+      "password help",
+      "login issue"
+    ],
+    "answer": "Use the self-service password reset page and complete MFA verification. If you cannot complete the reset flow, contact IT support for identity verification."
+  },
+  {
+    "id": "vpn-access",
+    "category": "IT",
+    "question": "How do I access the company VPN?",
+    "aliases": [
+      "vpn setup",
+      "how to connect vpn",
+      "remote network access",
+      "vpn access help"
+    ],
+    "keywords": [
+      "vpn",
+      "remote access",
+      "network access",
+      "secure connection"
+    ],
+    "answer": "Install the approved VPN client, sign in with company credentials, and complete MFA. If your access has not been provisioned, raise a request with IT."
+  },
+  {
+    "id": "software-access",
+    "category": "IT",
+    "question": "How do I request software access?",
+    "aliases": [
+      "application access request",
+      "need tool access",
+      "how to get system access",
+      "software approval"
+    ],
+    "keywords": [
+      "software access",
+      "application access",
+      "system access",
+      "approval"
+    ],
+    "answer": "Submit an access request through the IT or service portal with the business reason, manager approval if required, and the access level you need."
+  },
+  {
+    "id": "it-support",
+    "category": "IT",
+    "question": "How do I contact IT support?",
+    "aliases": [
+      "helpdesk contact",
+      "technical support",
+      "who handles laptop issues",
+      "it help"
+    ],
+    "keywords": [
+      "it support",
+      "helpdesk",
+      "technical issue",
+      "ticket"
+    ],
+    "answer": "You can contact IT support through the helpdesk portal or the shared support channel. Include your device details, screenshots, and the business impact for faster help."
+  },
+  {
+    "id": "device-policy",
+    "category": "IT",
+    "question": "What is the company device policy?",
+    "aliases": [
+      "laptop policy",
+      "device usage policy",
+      "can i use personal laptop",
+      "endpoint policy"
+    ],
+    "keywords": [
+      "device policy",
+      "laptop",
+      "endpoint",
+      "personal device"
+    ],
+    "answer": "Company work should be done on approved and managed devices whenever required by policy. Security controls, updates, and asset handling rules apply to all official devices."
+  },
+  {
+    "id": "data-classification",
+    "category": "Security",
+    "question": "What are the data classification levels?",
+    "aliases": [
+      "data sensitivity levels",
+      "what classifications do we use",
+      "public internal confidential restricted",
+      "classify data"
+    ],
+    "keywords": [
+      "data classification",
+      "confidential",
+      "internal",
+      "public",
+      "restricted"
+    ],
+    "answer": "Company data is generally classified as Public, Internal, Confidential, or Restricted. More sensitive levels require tighter access controls, storage limits, and sharing restrictions."
+  },
+  {
+    "id": "report-phishing",
+    "category": "Security",
+    "question": "How should I report a phishing email?",
+    "aliases": [
+      "report suspicious email",
+      "phishing email received",
+      "malicious email report",
+      "spam security report"
+    ],
+    "keywords": [
+      "phishing",
+      "suspicious email",
+      "report email",
+      "malicious email"
+    ],
+    "answer": "Do not click any links or open attachments. Report the message using the phishing reporting option in email or forward it to the security team for review."
+  },
+  {
+    "id": "incident-response",
+    "category": "Security",
+    "question": "What should I do during a security incident?",
+    "aliases": [
+      "security breach response",
+      "incident response steps",
+      "what to do if there is a breach",
+      "report incident"
+    ],
+    "keywords": [
+      "security incident",
+      "breach",
+      "incident response",
+      "report incident"
+    ],
+    "answer": "Immediately report the incident to the security team, preserve relevant evidence, avoid altering affected systems, and follow the incident response playbook."
+  },
+  {
+    "id": "mfa-policy",
+    "category": "Security",
+    "question": "Is multi-factor authentication required?",
+    "aliases": [
+      "mfa policy",
+      "do i need mfa",
+      "two factor authentication",
+      "authentication requirements"
+    ],
+    "keywords": [
+      "mfa",
+      "two factor",
+      "authentication",
+      "security login"
+    ],
+    "answer": "Yes. Multi-factor authentication is required for supported company systems, especially for remote access, email, admin tools, and other sensitive applications."
+  },
+  {
+    "id": "expense-reimbursement",
+    "category": "Finance",
+    "question": "How does expense reimbursement work?",
+    "aliases": [
+      "claim expenses",
+      "reimbursement process",
+      "travel expense claim",
+      "how do i get reimbursed"
+    ],
+    "keywords": [
+      "expense",
+      "reimbursement",
+      "travel claim",
+      "receipts"
+    ],
+    "answer": "Expense claims should be submitted through the finance portal with receipts attached. Approved claims are usually reimbursed in the next payroll cycle."
+  },
+  {
+    "id": "payroll-schedule",
+    "category": "Finance",
+    "question": "When is payroll processed?",
+    "aliases": [
+      "salary date",
+      "when do we get paid",
+      "payday",
+      "monthly payroll schedule"
+    ],
+    "keywords": [
+      "payroll",
+      "salary",
+      "payday",
+      "compensation"
+    ],
+    "answer": "Payroll is processed on the regular monthly payroll cycle defined by Finance. If there is a holiday impact or banking delay, Finance shares an announcement in advance."
+  },
+  {
+    "id": "payslip-access",
+    "category": "Finance",
+    "question": "How do I download my payslip?",
+    "aliases": [
+      "salary slip download",
+      "where is my payslip",
+      "pay statement access",
+      "compensation slip"
+    ],
+    "keywords": [
+      "payslip",
+      "salary slip",
+      "pay statement",
+      "payroll portal"
+    ],
+    "answer": "Payslips are available in the payroll or employee self-service portal after payroll is processed. Contact Finance or HR if a payslip is missing."
+  },
+  {
+    "id": "procurement-policy",
+    "category": "Finance",
+    "question": "How do I request a purchase or procurement approval?",
+    "aliases": [
+      "procurement request",
+      "purchase approval",
+      "buy equipment",
+      "vendor purchase request"
+    ],
+    "keywords": [
+      "procurement",
+      "purchase",
+      "approval",
+      "vendor"
+    ],
+    "answer": "Submit the purchase request through the approved procurement workflow with business justification, budget details, vendor information, and the required approvals."
+  },
+  {
+    "id": "manager-escalation",
+    "category": "Operations",
+    "question": "How do I escalate a blocker to my manager?",
+    "aliases": [
+      "raise blocker to manager",
+      "how to escalate issue",
+      "manager escalation",
+      "roadblock escalation"
+    ],
+    "keywords": [
+      "escalate blocker",
+      "manager help",
+      "roadblock",
+      "escalation"
+    ],
+    "answer": "Summarize the blocker, the impact, the options already tried, and the decision needed. Share that context with your manager early so the next step is clear."
+  },
+  {
+    "id": "training-policy",
+    "category": "HR",
+    "question": "Are there training or certification opportunities?",
+    "aliases": [
+      "learning budget",
+      "can i do certification",
+      "training support",
+      "skill development programs"
+    ],
+    "keywords": [
+      "training",
+      "certification",
+      "learning",
+      "development"
+    ],
+    "answer": "Teams can support relevant training and certifications based on business need, manager approval, and available budget. Check with your manager or HR for the current process."
+  },
+  {
+    "id": "hr-benefits-approval",
+    "category": "HR",
+    "question": "How does HR approve benefits exceptions?",
+    "aliases": [
+      "benefits exception process",
+      "policy exception for benefits",
+      "hr benefits approval",
+      "exception approval"
+    ],
+    "keywords": [
+      "benefits exception",
+      "hr approval",
+      "policy exception"
+    ],
+    "allowed_roles": [
+      "admin",
+      "hr"
+    ],
+    "answer": "HR should document the request, review policy eligibility, collect supporting evidence, and record the final approval or rejection with employee case notes."
+  },
+  {
+    "id": "admin-audit-export",
+    "category": "Admin",
+    "question": "How do I export audit logs for compliance review?",
+    "aliases": [
+      "audit export",
+      "download audit logs",
+      "compliance evidence export",
+      "governance log export"
+    ],
+    "keywords": [
+      "export audit logs",
+      "compliance review",
+      "audit export"
+    ],
+    "allowed_roles": [
+      "admin"
+    ],
+    "answer": "Admins can export audit activity from the dashboard export action to share governance evidence with compliance, audit, or leadership stakeholders."
+  }
+]
+
+
+
+

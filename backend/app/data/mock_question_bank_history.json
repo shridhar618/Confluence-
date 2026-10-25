@@ -1,0 +1,66 @@
+[
+  {
+    "timestamp": "2026-03-30T06:52:07.486839",
+    "action": "create",
+    "question_id": "temporary-smoke-test-question",
+    "actor": "admin",
+    "before": null,
+    "after": {
+      "id": "temporary-smoke-test-question",
+      "category": "General",
+      "question": "Temporary smoke test question?",
+      "keywords": [
+        "smoke test"
+      ],
+      "allowed_roles": [
+        "admin",
+        "hr",
+        "intern"
+      ],
+      "answer": "Temporary smoke test answer."
+    }
+  },
+  {
+    "timestamp": "2026-03-30T06:52:39.547240",
+    "action": "delete",
+    "question_id": "temporary-smoke-test-question",
+    "actor": "admin",
+    "before": {
+      "id": "temporary-smoke-test-question",
+      "category": "General",
+      "question": "Temporary smoke test question?",
+      "keywords": [
+        "smoke test"
+      ],
+      "allowed_roles": [
+        "admin",
+        "hr",
+        "intern"
+      ],
+      "answer": "Temporary smoke test answer."
+    },
+    "after": null
+  },
+  {
+    "timestamp": "2026-03-31T11:35:17.784322",
+    "action": "create",
+    "question_id": "salalry-for-the-leo",
+    "actor": "admin",
+    "before": null,
+    "after": {
+      "id": "salalry-for-the-leo",
+      "category": "General",
+      "question": "salalry for the Leo",
+      "keywords": [
+        "salalry",
+        "leo"
+      ],
+      "allowed_roles": [
+        "admin",
+        "hr",
+        "intern"
+      ],
+      "answer": "5 cr"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "for-what-type-of-project-comapany-will-w-1775127436",
+    "query": "for what type of project, comapany will work?",
+    "count": 1,
+    "status": "open",
+    "created_at": "2026-04-02T16:27:16.282287",
+    "last_seen_at": "2026-04-02T16:27:16.282287",
+    "latest_role": "admin",
+    "latest_username": "admin",
+    "resolution_note": ""
+  },
+  {
+    "id": "how-much-1775127533",
+    "query": "how much?",
+    "count": 1,
+    "status": "open",
+    "created_at": "2026-04-02T16:28:53.202497",
+    "last_seen_at": "2026-04-02T16:28:53.202497",
+    "latest_role": "admin",
+    "latest_username": "admin",
+    "resolution_note": ""
+  },
+  {
+    "id": "how-are-you-1775127838",
+    "query": "how are you?",
+    "count": 1,
+    "status": "open",
+    "created_at": "2026-04-02T16:33:58.575875",
+    "last_seen_at": "2026-04-02T16:33:58.575875",
+    "latest_role": "admin",
+    "latest_username": "admin",
+    "resolution_note": ""
+  }
+]

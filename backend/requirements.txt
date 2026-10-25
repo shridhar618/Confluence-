@@ -1,0 +1,41 @@
+flask==3.0.3
+flask-cors==4.0.1
+flask-socketio==5.3.6
+flask-sqlalchemy==3.1.1
+flask-jwt-extended==4.6.0
+python-dotenv==1.0.1
+werkzeug==3.0.3
+simple-websocket==1.0.0
+eventlet==0.36.1
+openai==1.35.3
+google-generativeai==0.7.2
+scikit-learn==1.5.1
+numpy==1.26.4
+pypdf==5.4.0
+Pillow==10.4.0
+
+# Phase 15 -- real face recognition (replaces the earlier placeholder).
+# opencv-python is straightforward on every platform. dlib (a dependency
+# of face_recognition) is the one piece worth knowing about in advance:
+# it's a compiled C++ library and can be slow/fussy to build from source,
+# especially on Windows without Visual Studio Build Tools installed.
+#   - macOS/Linux: usually just `pip install dlib` works.
+#   - Windows: if `pip install dlib` fails, either install Visual Studio
+#     Build Tools first, or use conda instead: `conda install -c
+#     conda-forge dlib`, then `pip install face_recognition` on top.
+# If dlib truly cannot be installed, attendance enrollment/verification
+# will return a clear error rather than silently using a fake method --
+# see app/services/face_attendance.py.
+opencv-python==4.10.0.84
+dlib==19.24.6
+face_recognition==1.3.0
+pytest==8.3.2
+
+# Phase 6 -- RAG pipeline (not verified in the sandbox this was authored in;
+# see docs/PHASE_6_NOTES.md). Sizeable downloads (sentence-transformers
+# pulls in torch) -- install these separately if you just want the rest of
+# the app running.
+langchain-text-splitters==0.3.2
+langchain-community==0.3.7
+sentence-transformers==3.3.1
+qdrant-client==1.12.1
