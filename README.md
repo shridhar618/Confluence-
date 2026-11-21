@@ -1,5 +1,7 @@
 # SecureAI
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?logo=socketdotio&logoColor=white)
+
 SecureAI is currently a governance-first internal operations application built around a role-aware enterprise assistant. It combines governed AI chat, audit logging, question-bank operations, lightweight workforce task tracking, assignment escalations, face-based attendance capture, private messaging, and a few hackathon-style security demo surfaces.
 
 The implemented product is broader than a chatbot, but it is not yet a production-grade security platform. The strongest current identity is: an explainable governance and accountability workspace for AI-assisted internal operations.
@@ -61,6 +63,19 @@ Default URLs:
 
 - Frontend: `http://127.0.0.1:3000`
 - Backend: `http://127.0.0.1:5001`
+
+## Environment variables
+
+| Variable | Purpose | Default |
+|---|---|---|
+| `AI_PROVIDER` | LLM provider: `gemini`, `openai` or `ollama` | - |
+| `GEMINI_API_KEY / GEMINI_MODEL` | Google Gemini credentials and model | - |
+| `OPENAI_API_KEY` | OpenAI credentials | - |
+| `OLLAMA_BASE_URL / OLLAMA_MODEL` | Local Ollama server and model | - |
+| `SECRET_KEY / JWT_SECRET_KEY` | Flask and JWT signing secrets; set long random values outside development | - |
+| `DATABASE_URL` | Database connection string | - |
+| `PORT / DEBUG / SOCKETIO_ASYNC_MODE` | Server port, debug flag and Socket.IO async mode | - |
+| `VITE_PROXY_TARGET` | Backend URL the Vite dev server proxies to | - |
 
 ## Seeded Users
 
